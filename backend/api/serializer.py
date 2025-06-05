@@ -5,3 +5,8 @@ from .models import *
 #     class Meta:
 #         model = InvoiceItem
 #         fields = '__all__'
+class ApartmentSerializer(serializers.ModelSerializer):
+    apartment = serializers.PrimaryKeyRelatedField(read_only=True)
+    class Meta:
+        model = Apartments
+        fields = '__all__'

@@ -1,12 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './pages/Navbar'
 import {BrowserRouter as Router,Routes,Route } from "react-router-dom"
-import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import FormPage from './pages/FormPage'
-import TaskTable from './pages/TaskTable'
+import Apartments from './pages/Apartments'
 function App() {
 
   return (
@@ -16,7 +12,7 @@ function App() {
         <Navbar/>
       <Routes>
         
-<Route element={<TaskTable/>}path="/tasktable"/>
+<Route element={<Apartments/>} path='/apartments'/>
 
       </Routes>
      </Router>
